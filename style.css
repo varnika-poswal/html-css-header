@@ -1,0 +1,96 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing:border-box;
+}
+
+.hero{
+    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url('file:///C:/Users/MI%20Computer/Desktop/istockphoto-1351571961-170667a.jpg');
+    background-position: center;
+    background-size: cover;
+    width:100%;
+    height:100vh;
+}
+.banner{
+display:flex;
+justify-content: space-between;
+}
+
+.logo{
+    margin:auto 3rem;
+    color:#fff;
+    font-size:22px;
+    cursor:pointer;
+    font-weight:600;
+}
+span{
+    color:yellow;
+}
+nav ul li{
+    display:inline-block;
+    list-style:none;
+    margin:2rem;
+    position: relative;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color:#fff;
+    text-transform:uppercase;
+    font-weight:500;
+    font-size:18px;
+}
+
+nav ul li a:after{
+    content:'';
+height:3px;
+width:0%;
+position: absolute;
+left:0;
+bottom:-3px;
+background-color: #fff;
+transition:0.6s ease-in-out;
+}
+
+nav ul li a:hover::after{
+    width:100%;
+}
+.content{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    text-align: center;
+    width:100%;
+}
+
+.content h1{
+    color:#fff;
+    font-size:60px;
+    font-weight:800;
+}
+
+.content p{
+    margin:0.5rem;
+    color:#fff;
+}
+
+button{
+    width:200px;
+    margin:1.2rem 1.5rem;
+    padding:0.8rem 1rem;
+    border:2px solid #fff;
+    border-radius:25px;
+    background-color:transparent;
+    text-transform: uppercase;
+    color:#fff;
+    font-weight:bold;
+    box-shadow:inset 0 0 0 #009688;
+    transition: 0.6 ease-in-out;
+    cursor:pointer;
+}
+
+button:hover{
+    box-shadow:inset 200px 0 0 #009688;
+}
